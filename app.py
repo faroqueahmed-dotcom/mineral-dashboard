@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -58,4 +56,3 @@ fig.update_layout(
 )
 
 st.plotly_chart(fig)
->>>>>>> 9b3cde4bea1b3bead4d0fbcda09ce6caae233e50
