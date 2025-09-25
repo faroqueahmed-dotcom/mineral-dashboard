@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 streamlit
 pandas
 numpy
 plotly
+>>>>>>> 9b3cde4bea1b3bead4d0fbcda09ce6caae233e50
