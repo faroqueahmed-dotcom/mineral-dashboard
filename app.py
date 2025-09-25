@@ -96,11 +96,20 @@ elif chart_type == "Multi-Axis Comparison":
                 fig.update_layout(
                     title=f"{mineral} in {country}",
                     xaxis=dict(domain=[0.1, 0.85]),
-                    yaxis=dict(title="Price", titlefont=dict(color="blue"), tickfont=dict(color="blue")),
-                    yaxis2=dict(title="Reserves", titlefont=dict(color="red"), tickfont=dict(color="red"),
-                                anchor="free", overlaying="y", side="left", position=0.05),
-                    yaxis3=dict(title="Demand", titlefont=dict(color="green"), tickfont=dict(color="green"),
-                                anchor="x", overlaying="y", side="right"),
+                    yaxis=dict(
+                        title=dict(text="Price", font=dict(color="blue")),
+                        tickfont=dict(color="blue")
+                    ),
+                    yaxis2=dict(
+                        title=dict(text="Reserves", font=dict(color="red")),
+                        tickfont=dict(color="red"),
+                        anchor="free", overlaying="y", side="left", position=0.05
+                    ),
+                    yaxis3=dict(
+                        title=dict(text="Demand", font=dict(color="green")),
+                        tickfont=dict(color="green"),
+                        anchor="x", overlaying="y", side="right"
+                    ),
                     legend=dict(x=1.05, y=1)
                 )
                 st.plotly_chart(fig, use_container_width=True)
