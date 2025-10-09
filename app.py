@@ -42,7 +42,7 @@ df = pd.DataFrame(data, columns=["Country", "Mineral", "Date", "Price", "Reserve
 # Streamlit Dashboard
 # -------------------
 st.set_page_config(page_title="Mineral Analytics Dashboard", layout="wide")
-st.title("🌍 Bilateral Mineral Trade Dashboard")
+st.title("🌍 Mineral Trade Dashboard")
 st.markdown("<i style='color: #888;'>Developed by Dr. Kazi Sohag & Faroque Ahmed</i>", unsafe_allow_html=True)
 
 
